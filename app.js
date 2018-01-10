@@ -32,7 +32,6 @@ app.use(bodyParser.urlencoded({
 app.use(cors(
   { origin: '*' }
 ));
-
 app.use('/api', carouselRouter);
 
 app.listen(PORT, function () {
