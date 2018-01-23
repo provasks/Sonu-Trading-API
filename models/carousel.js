@@ -1,28 +1,18 @@
 var mongoose = require('mongoose');
-// var Schema = mongoose.Schema;
-
-/**
- {
-  "urlDesktop":"img-01.jpg",
-  "urlTablet": "img-01.jpg",
-  "urlMobile": "img-01.jpg",
-  "alt":"Apple",
-  "title": "Sweet Apple",
-  "subTitle": "Sweet Subtitle"
- }
- */
 var carouselSchema = new mongoose.Schema({
-  urlDesktop: {
-    type: String,
-    required: true
-  },
-  urlTablet: {
-    type: String,
-    required: true
-  },
-  urlMobile: {
-    type: String,
-    required: true
+  url: {
+    Desktop: {
+      type: String,
+      required: true
+    },
+    Tablet: {
+      type: String,
+      required: true
+    },
+    Mobile: {
+      type: String,
+      required: true
+    }
   },
   alt: {
     type: String,
@@ -32,7 +22,7 @@ var carouselSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  tubTitle: {
+  subTitle: {
     type: String,
     required: true
   }
